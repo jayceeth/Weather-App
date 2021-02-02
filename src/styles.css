@@ -1,0 +1,15 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  margin-top: 70px;
+  padding-top: 30px;
+}
+
+#current-temp {
+  font-size: 40px;
+}
