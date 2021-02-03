@@ -1,15 +1,21 @@
 ul {
   list-style: none;
   padding: 0;
+  color: rgb(155, 155, 155);
+  font-size: 18px;
+  text-transform: capitalize;
 }
 
 .container {
-  border: 1px solid rgb(180, 180, 180);
+  border: 1px solid rgb(206, 206, 206);
   border-radius: 5px;
   margin-top: 70px;
-  padding-top: 30px;
+  padding: 30px;
 }
 
 #current-temp {
-  font-size: 40px;
+  font-size: 38px;
+}
+#units {
+  font-size: 20px;
 }
