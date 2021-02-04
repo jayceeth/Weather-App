@@ -1,6 +1,28 @@
-
+function formatDate() {
+  let currentDateTime = new Date();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[currentDateTime.getDay()];
+  let hours = currentDateTime.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = currentDateTime.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${day} ${hours}:${minutes}`;
+}
+let changeDateTime = document.querySelector("#date");
+changeDateTime.innerHTML = formatDate(changeDateTime);
 function displayCurrentTemp(response){
-    console.log(response);
     let tempElement = document.querySelector("#temperature");
     let cityElement = document.querySelector("#current-city");
     let humidityElement = document.querySelector("#humidity");
@@ -12,7 +34,6 @@ function displayCurrentTemp(response){
     windElement.innerHTML = Math.round(response.data.wind.speed);
     descriptionElement.innerHTML = response.data.weather[0].description;
 }
-
 
 let apiKey = "f0229aa4803b78f326fa1951e4c8d9a5";
 let city = "San Francisco"

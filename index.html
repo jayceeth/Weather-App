@@ -12,28 +12,32 @@
     />
     <title>Weather App</title>
     <link rel="stylesheet" href="src/styles.css" type="text/css" />
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <h1 id="current-city">San Francisco</h1>
-      <ul>
-        <li>Sunday 11:00PM</li>
-        <li id="description"></li>   
+      <ul id="top-description">
+        <li id="date"></li>
+        <li id="description"></li>
       </ul>
-    <div class="row">
+      <div class="row">
         <div class="col-md-6" id="current-temp">
-           ☁
-            <span id="temperature"></span> <span id="units"><a href="" id="imperial">°F</a>
-            |<a href="" id="metric">°C</a></span>
-           
+          ☁
+          <span id="temperature"></span>
+          <span id="units"
+            ><a href="" id="imperial">°F</a> |<a href="" id="metric"
+              >°C</a
+            ></span
+          >
         </div>
         <div class="col-md-6">
-        <ul>
+          <ul>
             <li>Humidity: <span id="humidity"></span>%</li>
             <li>Wind: <span id="wind"></span> mph</li>
-        </ul>
+          </ul>
         </div>
+      </div>
     </div>
     <script src="src/index.js"></script>
   </body>
