@@ -31,7 +31,9 @@ function displayCurrentTemp(response){
     let windElement = document.querySelector("#wind");
     let descriptionElement = document.querySelector("#description");
     let iconElement = document.querySelector("#icon");
-    tempElement.innerHTML = Math.round(response.data.main.temp);
+
+    imperialTemp = response.data.main.temp
+    tempElement.innerHTML = Math.round(imperialTemp);
     cityElement.innerHTML = response.data.name;
     humidityElement.innerHTML = response.data.main.humidity;
     windElement.innerHTML = Math.round(response.data.wind.speed);
@@ -56,7 +58,38 @@ function handleSubmit(event) {
   searchCity(cityInputElement.value);
 }
 
+function displayMetricTemp(event){
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  metricLink.classList.add("active");
+  imperialLink.classList.remove("active");
+  let metricTemp = (imperialTemp-32)* 5/9;
+  temperatureElement.innerHTML = Math.round(metricTemp);
+}
+
+function displayImperialTemp(event){
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  metricLink.classList.remove("active");
+  imperialLink.classList.add("active");
+  temperatureElement.innerHTML = Math.round(imperialTemp);
+}
+
+let imperialTemp = null;
+
 let searchBox = document.querySelector("#search-form");
 searchBox.addEventListener("submit", handleSubmit);
+
+
+
+let imperialLink = document.querySelector("#imperial-link");
+imperialLink.addEventListener("click", displayImperialTemp);
+
+let metricLink = document.querySelector("#metric-link");
+metricLink.addEventListener("click", displayMetricTemp);
+
+
+
+
 
 searchCity("San Francisco");

@@ -11,13 +11,16 @@ ul {
 }
 form {
   position: relative;
-  left: 320px;
+  left: 275px;
   top: -38px;
 }
 img {
   width: 75px;
-  margin-top: -10px;
+  margin-top: -27px;
   margin-left: -20px;
+}
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -27,6 +30,17 @@ img {
   margin-top: 70px;
   padding: 30px;
   width: 618px;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.current-temp .units {
+  position: relative;
+  top: -18px;
+  font-size: 20px;
+}
+.current-temp .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
 }
 
 #top-description {
@@ -34,9 +48,15 @@ img {
   margin-top: -50px;
 }
 
-#current-temp {
+#temperature {
   font-size: 40px;
+  position: relative;
+  left: -8px;
 }
 #units {
   font-size: 20px;
+}
+#submit-button {
+  position: relative;
+  left: -26px;
 }
