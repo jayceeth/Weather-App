@@ -43,7 +43,20 @@ function displayCurrentTemp(response){
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "f0229aa4803b78f326fa1951e4c8d9a5";
-let city = "San Francisco"
-let apiURL =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`
-axios.get(apiURL).then(displayCurrentTemp)
+
+function searchCity(city){
+    let apiKey = "f0229aa4803b78f326fa1951e4c8d9a5";
+    let apiURL =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`
+    axios.get(apiURL).then(displayCurrentTemp);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  searchCity(cityInputElement.value);
+}
+
+let searchBox = document.querySelector("#search-form");
+searchBox.addEventListener("submit", handleSubmit);
+
+searchCity("San Francisco");

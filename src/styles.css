@@ -9,16 +9,29 @@ ul {
   font-size: 18px;
   text-transform: capitalize;
 }
+form {
+  position: relative;
+  left: 320px;
+  top: -38px;
+}
+img {
+  width: 75px;
+  margin-top: -10px;
+  margin-left: -20px;
+}
 
 .container {
+  display: block;
   border: 1px solid rgb(206, 206, 206);
   border-radius: 5px;
   margin-top: 70px;
   padding: 30px;
+  width: 618px;
 }
 
 #top-description {
   margin-bottom: 0;
+  margin-top: -50px;
 }
 
 #current-temp {
