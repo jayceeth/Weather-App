@@ -22,6 +22,10 @@ img {
 a {
   text-decoration: none;
 }
+small {
+  position: relative;
+  left: 340px;
+}
 
 .container {
   display: block;
@@ -53,9 +57,7 @@ a {
   position: relative;
   left: -8px;
 }
-#units {
-  font-size: 20px;
-}
+
 #submit-button {
   position: relative;
   left: -26px;
