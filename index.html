@@ -47,26 +47,23 @@
         <li id="date"></li>
         <li id="description"></li>
       </ul>
-      <div class="row">
-        <div class="col-md-6 current-temp">
-          <img src="" alt="Clear" id="icon" class="float-left" />
-          <span id="temperature"></span>
-          <span class="units"
-            ><a href="" id="imperial-link" class="active">°F</a> |<a
-              href=""
-              id="metric-link"
-              >°C</a
-            ></span
-          >
-        </div>
-        <div class="col-md-6">
-          <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span> mph</li>
-          </ul>
-        </div>
-        <div class="row" id="forecast"></div>
+      <div class="current-temp">
+        <img src="" alt="Clear" id="icon" class="float-left" />
+        <span id="temperature"></span>
+        <span class="units"
+          ><a href="" id="imperial-link" class="active">°F</a> |<a
+            href=""
+            id="metric-link"
+            >°C</a
+          ></span
+        >
       </div>
+      <ul class="weather-condition">
+        <li>Humidity: <span id="humidity"></span>%</li>
+        <li>Wind: <span id="wind"></span> mph</li>
+      </ul>
+      <div class="row" id="forecast-one"></div>
+      <div class="row" id="forecast-two"></div>
     </div>
     <small>
       <a href="https://github.com/jayceeth/Weather-App" target="_blank"
