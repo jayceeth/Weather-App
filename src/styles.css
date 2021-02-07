@@ -3,7 +3,6 @@ h3 {
   color: rgb(104, 104, 104);
 }
 h1 {
-  margin-left: 20px;
   margin-top: 15px;
 }
 ul {
@@ -38,7 +37,7 @@ small {
   margin-top: 70px;
   padding: 30px;
   width: 618px;
-  height: 410px;
+  height: 518px;
   background-image: linear-gradient(
     to top,
     #bdc2e8 0%,
