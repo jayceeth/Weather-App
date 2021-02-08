@@ -4,6 +4,12 @@ h3 {
 }
 h1 {
   margin-top: 15px;
+  padding-left: 45px;
+  font-size: 28px;
+  font-weight: 450;
+}
+h3 {
+  font-size: 18px;
 }
 ul {
   list-style: none;
@@ -14,30 +20,18 @@ ul {
 }
 form {
   position: relative;
-  left: 275px;
+  left: 260px;
   top: -50px;
 }
-img {
-  width: 75px;
-  margin-top: -27px;
-  margin-left: -20px;
-}
+
 a {
   text-decoration: none;
 }
-small {
-  position: relative;
-  left: 285px;
-}
-
-.container {
-  display: block;
+.weather-app {
+  padding: 30px;
   border: 1px solid rgb(206, 206, 206);
   border-radius: 5px;
-  margin-top: 70px;
-  padding: 30px;
-  width: 618px;
-  height: 650px;
+  height: 500px;
   background-image: linear-gradient(
     to top,
     #bdc2e8 0%,
@@ -46,14 +40,18 @@ small {
   );
 }
 
+.app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
 .current-temp {
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 45px;
 }
 
 .weather-condition {
   margin-top: 15px;
-  margin-left: 20px;
+  margin-left: 45px;
 }
 .current-temp .units {
   position: relative;
@@ -64,10 +62,12 @@ small {
   color: rgb(33, 33, 33);
   cursor: default;
 }
-
+.forecast-temperature {
+  font-size: 12px;
+}
 #top-description {
   margin-top: -30px;
-  margin-left: 20px;
+  margin-left: 45px;
 }
 
 #temperature {
@@ -83,7 +83,16 @@ small {
 #forecast-one,
 #forecast-two {
   position: relative;
-  left: 270px;
+  left: 265px;
   top: -230px;
   padding-bottom: 20px;
+  margin-right: 45px;
+}
+#icon {
+  width: 75px;
+  margin-top: -27px;
+  margin-left: -20px;
+}
+#forecast-img {
+  width: 60px;
 }

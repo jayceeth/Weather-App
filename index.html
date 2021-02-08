@@ -16,61 +16,66 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <h1 id="current-city"></h1>
-        </div>
-        <div class="col-6"></div>
-        <form id="search-form" class="mb-3">
+      <div class="app-wrapper">
+        <div class="weather-app">
           <div class="row">
-            <div class="col-4">
-              <input
-                type="search"
-                placeholder="Enter a city"
-                class="form-control"
-                id="city-input"
-                autocomplete="off"
-              />
+            <div class="col-6">
+              <h1 id="current-city"></h1>
             </div>
-            <div class="col-2">
-              <input
-                type="submit"
-                value="Search"
-                class="btn btn-primary w-100"
-                id="submit-button"
-              />
-            </div>
+            <div class="col-6"></div>
+            <form id="search-form" class="mb-3">
+              <div class="row">
+                <div class="col-4">
+                  <input
+                    type="search"
+                    placeholder="Enter a city"
+                    class="form-control"
+                    id="city-input"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-2">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="btn btn-primary w-100"
+                    id="submit-button"
+                  />
+                </div>
+              </div>
+            </form>
           </div>
-        </form>
+          <ul id="top-description">
+            <li id="date"></li>
+            <li id="description"></li>
+          </ul>
+          <div class="current-temp">
+            <img src="" alt="Clear" id="icon" class="float-left" />
+            <span id="temperature"></span>
+            <span class="units"
+              ><a href="" id="imperial-link" class="active">°F</a> |<a
+                href=""
+                id="metric-link"
+                >°C</a
+              ></span
+            >
+          </div>
+          <ul class="weather-condition">
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span> mph</li>
+          </ul>
+          <div class="row" id="forecast-one"></div>
+          <div class="row" id="forecast-two"></div>
+        </div>
+        <small>
+          <a href="https://github.com/jayceeth/Weather-App" target="_blank"
+            >Open-source code</a
+          >
+          by Jaycee Huynh
+        </small>
       </div>
-      <ul id="top-description">
-        <li id="date"></li>
-        <li id="description"></li>
-      </ul>
-      <div class="current-temp">
-        <img src="" alt="Clear" id="icon" class="float-left" />
-        <span id="temperature"></span>
-        <span class="units"
-          ><a href="" id="imperial-link" class="active">°F</a> |<a
-            href=""
-            id="metric-link"
-            >°C</a
-          ></span
-        >
-      </div>
-      <ul class="weather-condition">
-        <li>Humidity: <span id="humidity"></span>%</li>
-        <li>Wind: <span id="wind"></span> mph</li>
-      </ul>
-      <div class="row" id="forecast-one"></div>
-      <div class="row" id="forecast-two"></div>
     </div>
-    <small>
-      <a href="https://github.com/jayceeth/Weather-App" target="_blank"
-        >Open-source code</a
-      >
-      by Jaycee Huynh
-    </small>
+
     <script src="src/index.js"></script>
   </body>
 </html>

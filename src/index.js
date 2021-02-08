@@ -74,8 +74,9 @@ function displayForecast(response){
         src="http://openweathermap.org/img/wn/${
           forecast.weather[0].icon
         }@2x.png"
+        id="forecast-img"
       />
-      <div class="weather-forecast-temperature">
+      <div class="forecast-temperature">
         <strong>
           ${Math.round(forecast.main.temp_max)}°F
         </strong>|
@@ -96,8 +97,9 @@ function displayForecast(response){
         src="http://openweathermap.org/img/wn/${
           forecast.weather[0].icon
         }@2x.png"
+        id="forecast-img"
       />
-      <div class="weather-forecast-temperature">
+      <div class="forecast-temperature">
         <strong>
           ${Math.round(forecast.main.temp_max)}°F
         </strong>|
